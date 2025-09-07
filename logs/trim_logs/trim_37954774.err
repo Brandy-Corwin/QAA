@@ -1,0 +1,56 @@
+TrimmomaticPE: Started with arguments:
+ -threads 8 trimmed/CcoxCrh_comrhy59_EO_6cm_1_1.fastq.gz trimmed/CcoxCrh_comrhy59_EO_6cm_1_2.fastq.gz trimmed/paired_CcoxCrh_comrhy59_EO_6cm_1_1.fastq.gz trimmed/unpaired_CcoxCrh_comrhy59_EO_6cm_1_1.fastq.gz trimmed/paired_CcoxCrh_comrhy59_EO_6cm_1_2.fastq.gz trimmed/unpaired_CcoxCrh_comrhy59_EO_6cm_1_2.fastq.gz HEADCROP:8 LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
+Quality encoding detected as phred33
+Input Read Pairs: 45291631 Both Surviving: 44735242 (98.77%) Forward Only Surviving: 334331 (0.74%) Reverse Only Surviving: 200984 (0.44%) Dropped: 21074 (0.05%)
+TrimmomaticPE: Completed successfully
+	Command being timed: "trimmomatic PE -threads 8 trimmed/CcoxCrh_comrhy59_EO_6cm_1_1.fastq.gz trimmed/CcoxCrh_comrhy59_EO_6cm_1_2.fastq.gz trimmed/paired_CcoxCrh_comrhy59_EO_6cm_1_1.fastq.gz trimmed/unpaired_CcoxCrh_comrhy59_EO_6cm_1_1.fastq.gz trimmed/paired_CcoxCrh_comrhy59_EO_6cm_1_2.fastq.gz trimmed/unpaired_CcoxCrh_comrhy59_EO_6cm_1_2.fastq.gz HEADCROP:8 LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35"
+	User time (seconds): 3287.35
+	System time (seconds): 40.58
+	Percent of CPU this job got: 513%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:48.06
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1200304
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1494685
+	Voluntary context switches: 483443
+	Involuntary context switches: 37173
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 928
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+TrimmomaticPE: Started with arguments:
+ -threads 8 trimmed/CcoxCrh_comrhy113_EO_adult_2_1.fastq.gz trimmed/CcoxCrh_comrhy113_EO_adult_2_2.fastq.gz trimmed/paired_CcoxCrh_comrhy113_EO_adult_2_1.fastq.gz trimmed/unpaired_CcoxCrh_comrhy113_EO_adult_2_1.fastq.gz trimmed/paired_CcoxCrh_comrhy113_EO_adult_2_2.fastq.gz trimmed/unpaired_CcoxCrh_comrhy113_EO_adult_2_2.fastq.gz HEADCROP:8 LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35
+Quality encoding detected as phred33
+Input Read Pairs: 34977867 Both Surviving: 34579699 (98.86%) Forward Only Surviving: 245659 (0.70%) Reverse Only Surviving: 133389 (0.38%) Dropped: 19120 (0.05%)
+TrimmomaticPE: Completed successfully
+	Command being timed: "trimmomatic PE -threads 8 trimmed/CcoxCrh_comrhy113_EO_adult_2_1.fastq.gz trimmed/CcoxCrh_comrhy113_EO_adult_2_2.fastq.gz trimmed/paired_CcoxCrh_comrhy113_EO_adult_2_1.fastq.gz trimmed/unpaired_CcoxCrh_comrhy113_EO_adult_2_1.fastq.gz trimmed/paired_CcoxCrh_comrhy113_EO_adult_2_2.fastq.gz trimmed/unpaired_CcoxCrh_comrhy113_EO_adult_2_2.fastq.gz HEADCROP:8 LEADING:3 TRAILING:3 SLIDINGWINDOW:5:15 MINLEN:35"
+	User time (seconds): 2451.29
+	System time (seconds): 28.09
+	Percent of CPU this job got: 522%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:54.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1180548
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 861911
+	Voluntary context switches: 376138
+	Involuntary context switches: 27877
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 672
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

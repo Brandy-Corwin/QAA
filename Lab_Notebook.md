@@ -5,6 +5,15 @@
     - cutadapt 5.1
     - trimmomatic 0.40
     - SRA toolkit 3.2.1
+    - Star 2.7.11b
+    - Picard 3.1.1
+    - Samtools 1.22.1
+    - NumPy 1.26.4
+    - Matplotlib 3.10.6
+    - HTSeq 2.0.5
+    - gffread 0.12.7 
+
+- Made QAA_report.Rmd to create pdf report
 
 ### My files:  
 SRR25630299  
@@ -26,3 +35,43 @@ SRR25630379
     - It ran all four fastq files in 14:40 and the cpu usage was 99%
 
 - Added quality_dist.py from Demultiplex assignment and added argument for output name of histogram
+- Made make_hists.sh to run quality_dist.py on all four files
+    - All four files took about 45 minutes to run and used 99% cpu
+
+
+# Part 2  
+## (09/04/2025)
+
+#### Cutadapt
+using srun, ran
+
+```/usr/bin/time -v cutadapt -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT -o trimmed/CcoxCrh_comrhy59_EO_6cm_1_1.fastq.gz -p trimmed/CcoxCrh_comrhy59_EO_6cm_1_2.fastq.gz CcoxCrh_comrhy59_EO_6cm_1_1.fastq.gz CcoxCrh_comrhy59_EO_6cm_1_2.fastq.gz``` (7 min, 99% cpu) (R1 = 6.4%, R2 = 7.2% were trimmed)
+
+and
+
+```/usr/bin/time -v cutadapt -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT -o trimmed/CcoxCrh_comrhy113_EO_adult_2_1.fastq.gz -p trimmed/CcoxCrh_comrhy113_EO_adult_2_2.fastq.gz CcoxCrh_comrhy113_EO_adult_2_1.fastq.gz CcoxCrh_comrhy113_EO_adult_2_2.fastq.gz``` (5:30 min, 99% cpu) (R1 = 11.1%, R2 = 11.7% were trimmed)
+
+#### Trimmomatic
+
+- Using sbatch (trim.sh), ran trimmomatic on my cutadapt trimmed files
+    - CcoxCrh_comrhy59_EO_6cm_1: 10:48 min and 513% cpu
+    - CcoxCrh_comrhy113_EO_adult_2: 7:54 min and 522% cpu
+
+#### length distribution
+
+- made len_dist.py to create a tsv file with the read number, length, and count of length
+    - ran in sbatch script len_dist.sh
+        - CcoxCrh_comrhy59_EO_6cm_1: 4:24 min and 99% cpu
+        - CcoxCrh_comrhy113_EO_adult_2: 3:21 min and 99% cpu
+- then used R (len_dist_histogram.R) to graph the distribution
+
+- I have a lot of log files, so I put all of them into a logs directory
+
+
+# Part 3  
+## (09/06/2025)
+
+- Used command ```gffread -E /projects/bgmp/shared/Bi623/PS2/campylomormyrus.gff -o campylomormyrus.gtf``` to convert gff to gtf
+- made STAR_database.sh to create star database and STAR_alignment.sh to run the star alinment on each set of files
+- ran STAR_database.sh
+    - command took 4:10 minutes and used 485% cpu

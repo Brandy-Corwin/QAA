@@ -1,0 +1,92 @@
+	Command being timed: "./quality_dist.py -f CcoxCrh_comrhy59_EO_6cm_1_1.fastq.gz -l 150 -o histograms/CcoxCrh_comrhy59_EO_6cm_1_1.png"
+	User time (seconds): 749.32
+	System time (seconds): 0.44
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 12:36.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 65980
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 14678
+	Voluntary context switches: 2170
+	Involuntary context switches: 2035
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "./quality_dist.py -f CcoxCrh_comrhy59_EO_6cm_1_2.fastq.gz -l 150 -o histograms/CcoxCrh_comrhy59_EO_6cm_1_2.png"
+	User time (seconds): 829.42
+	System time (seconds): 0.41
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 13:57.04
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 65940
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 14689
+	Voluntary context switches: 1967
+	Involuntary context switches: 2162
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "./quality_dist.py -f CcoxCrh_comrhy113_EO_adult_2_1.fastq.gz -l 150 -o histograms/CcoxCrh_comrhy113_EO_adult_2_1.png"
+	User time (seconds): 559.54
+	System time (seconds): 0.35
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 9:26.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 65788
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 14691
+	Voluntary context switches: 1918
+	Involuntary context switches: 1419
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "./quality_dist.py -f CcoxCrh_comrhy113_EO_adult_2_2.fastq.gz -l 150 -o histograms/CcoxCrh_comrhy113_EO_adult_2_2.png"
+	User time (seconds): 553.58
+	System time (seconds): 0.34
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 9:17.72
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 65856
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 14681
+	Voluntary context switches: 685
+	Involuntary context switches: 1394
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
