@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 
-with open("Alignments_Danio_rerio.GRCz11.dna.ens114.STAR_2.7.11b/Danio_rerio.GRCz11.dna.ens114.STAR_2.7.11b.Aligned.out.sam", "r") as sam:
+import argparse
+
+# Define arguments that the user needs to input
+def get_args():
+    parser = argparse.ArgumentParser(description="This script generates a per base distribution of quality scores at each position for all reads.")
+    parser.add_argument("-f", "--file", help="The path to the input file (str)", required=True, type=str)
+    return parser.parse_args()
+	
+args = get_args()
+
+with open(args.file, "r") as sam:
     mapped: int = 0
     unmapped: int = 0
     for line in sam:

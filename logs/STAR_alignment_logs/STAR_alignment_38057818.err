@@ -1,0 +1,46 @@
+	Command being timed: "STAR --runThreadN 8 --runMode alignReads --outFilterMultimapNmax 3 --outSAMunmapped Within KeepPairs --alignIntronMax 1000000 --alignMatesGapMax 1000000 --readFilesCommand zcat --readFilesIn /projects/bgmp/bcorwin/bioinfo/Bi623/PS/QAA/trimmed/paired_CcoxCrh_comrhy59_EO_6cm_1_1.fastq.gz /projects/bgmp/bcorwin/bioinfo/Bi623/PS/QAA/trimmed/paired_CcoxCrh_comrhy59_EO_6cm_1_2.fastq.gz --genomeDir campylomormyrus.STAR_2.7.11b/ --outFileNamePrefix Alignments_CcoxCrh_comrhy59_EO_6cm_1.STAR_2.7.11b/CcoxCrh_comrhy59_EO_6cm_1.STAR_2.7.11b."
+	User time (seconds): 6737.06
+	System time (seconds): 17.82
+	Percent of CPU this job got: 770%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:36.93
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9803656
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 401629
+	Voluntary context switches: 413142
+	Involuntary context switches: 14307
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "STAR --runThreadN 8 --runMode alignReads --outFilterMultimapNmax 3 --outSAMunmapped Within KeepPairs --alignIntronMax 1000000 --alignMatesGapMax 1000000 --readFilesCommand zcat --readFilesIn /projects/bgmp/bcorwin/bioinfo/Bi623/PS/QAA/trimmed/paired_CcoxCrh_comrhy113_EO_adult_2_1.fastq.gz /projects/bgmp/bcorwin/bioinfo/Bi623/PS/QAA/trimmed/paired_CcoxCrh_comrhy113_EO_adult_2_2.fastq.gz --genomeDir campylomormyrus.STAR_2.7.11b/ --outFileNamePrefix Alignments_CcoxCrh_comrhy113_EO_adult_2.STAR_2.7.11b/CcoxCrh_comrhy113_EO_adult_2.STAR_2.7.11b."
+	User time (seconds): 5317.02
+	System time (seconds): 14.76
+	Percent of CPU this job got: 771%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:30.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9802132
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 363280
+	Voluntary context switches: 313399
+	Involuntary context switches: 11032
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

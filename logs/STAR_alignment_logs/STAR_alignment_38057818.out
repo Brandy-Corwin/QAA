@@ -1,0 +1,14 @@
+	/gpfs/home/bcorwin/miniforge3/envs/QAA/bin/STAR-avx2 --runThreadN 8 --runMode alignReads --outFilterMultimapNmax 3 --outSAMunmapped Within KeepPairs --alignIntronMax 1000000 --alignMatesGapMax 1000000 --readFilesCommand zcat --readFilesIn /projects/bgmp/bcorwin/bioinfo/Bi623/PS/QAA/trimmed/paired_CcoxCrh_comrhy59_EO_6cm_1_1.fastq.gz /projects/bgmp/bcorwin/bioinfo/Bi623/PS/QAA/trimmed/paired_CcoxCrh_comrhy59_EO_6cm_1_2.fastq.gz --genomeDir campylomormyrus.STAR_2.7.11b/ --outFileNamePrefix Alignments_CcoxCrh_comrhy59_EO_6cm_1.STAR_2.7.11b/CcoxCrh_comrhy59_EO_6cm_1.STAR_2.7.11b.
+	STAR version: 2.7.11b   compiled: 2025-07-24T03:06:21+0000 :/opt/conda/conda-bld/star_1753326220084/work/source
+Sep 07 14:51:01 ..... started STAR run
+Sep 07 14:51:01 ..... loading genome
+Sep 07 14:51:06 ..... started mapping
+Sep 07 15:05:36 ..... finished mapping
+Sep 07 15:05:37 ..... finished successfully
+	/gpfs/home/bcorwin/miniforge3/envs/QAA/bin/STAR-avx2 --runThreadN 8 --runMode alignReads --outFilterMultimapNmax 3 --outSAMunmapped Within KeepPairs --alignIntronMax 1000000 --alignMatesGapMax 1000000 --readFilesCommand zcat --readFilesIn /projects/bgmp/bcorwin/bioinfo/Bi623/PS/QAA/trimmed/paired_CcoxCrh_comrhy113_EO_adult_2_1.fastq.gz /projects/bgmp/bcorwin/bioinfo/Bi623/PS/QAA/trimmed/paired_CcoxCrh_comrhy113_EO_adult_2_2.fastq.gz --genomeDir campylomormyrus.STAR_2.7.11b/ --outFileNamePrefix Alignments_CcoxCrh_comrhy113_EO_adult_2.STAR_2.7.11b/CcoxCrh_comrhy113_EO_adult_2.STAR_2.7.11b.
+	STAR version: 2.7.11b   compiled: 2025-07-24T03:06:21+0000 :/opt/conda/conda-bld/star_1753326220084/work/source
+Sep 07 15:05:37 ..... started STAR run
+Sep 07 15:05:37 ..... loading genome
+Sep 07 15:05:41 ..... started mapping
+Sep 07 15:17:07 ..... finished mapping
+Sep 07 15:17:08 ..... finished successfully

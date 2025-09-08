@@ -6,7 +6,7 @@
     - trimmomatic 0.40
     - SRA toolkit 3.2.1
     - Star 2.7.11b
-    - Picard 3.1.1
+    - Picard 2.18.29
     - Samtools 1.22.1
     - NumPy 1.26.4
     - Matplotlib 3.10.6
@@ -75,3 +75,28 @@ and
 - made STAR_database.sh to create star database and STAR_alignment.sh to run the star alinment on each set of files
 - ran STAR_database.sh
     - command took 4:10 minutes and used 485% cpu
+- ran STAR_alignment.sh
+    - CcoxCrh_comrhy59_EO_6cm_1: 14:36 min and 770% cpu
+    - CcoxCrh_comrhy113_EO_adult_2: 11:30 min and 771% cpu
+- made sort_and_mark.sh to sort the sam file, then run MarkDuplicates
+
+| File | sort | MarkDuplicates |
+|------|------|----------------|
+| CcoxCrh_comrhy59_EO_6cm_1 | 5:07 min, 98% cpu | 13:08 min, 120% cpu |
+| CcoxCrh_comrhy113_EO_adult_2 | 2:44 min, 98% cpu | 9:54 min, 122% cpu |
+
+## (09/07/2025)
+
+- ran count_mapped.py on deduplicated files
+    - ```/usr/bin/time -v ./count_mapped.py -f Alignments_CcoxCrh_comrhy59_EO_6cm_1.STAR_2.7.11b/CcoxCrh_comrhy59_EO_6cm_1.STAR_2.7.11b.Aligned.out.markdup.sam > Alignments_CcoxCrh_comrhy59_EO_6cm_1.STAR_2.7.11b/CcoxCrh_comrhy59_EO_6cm_1_count_mapped.txt```
+        - 50 sec and 98% cpu; mapped: 29749319; unmapped: 9402878
+    - ```/usr/bin/time -v ./count_mapped.py -f Alignments_CcoxCrh_comrhy113_EO_adult_2.STAR_2.7.11b/CcoxCrh_comrhy113_EO_adult_2.STAR_2.7.11b.Aligned.out.markdup.sam > Alignments_CcoxCrh_comrhy113_EO_adult_2.STAR_2.7.11b/CcoxCrh_comrhy113_EO_adult_2_count_mapped.txt```
+        - 44 sec and 99% cpu; mapped: 25900086; unmapped: 10680808
+
+- made htseq-count.sh to run both runs of htsqe-count on my files
+    - forward CcoxCrh_comrhy59_EO_6cm_1: 21:05 min and 99% cpu
+    - reverse CcoxCrh_comrhy59_EO_6cm_1: 21:53 min and 99% cpu
+    - forward CcoxCrh_comrhy113_EO_adult_2: 18:42 min and 99% cpu
+    - reverse CcoxCrh_comrhy113_EO_adult_2: 19:11 min and 99% cpu
+
+- made test_strandedness.R to make a scatter plot of the reverse vs forward read counts to determine strandedness.
